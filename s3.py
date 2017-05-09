@@ -4,11 +4,11 @@ from botocore.client import Config
 
 class Bucket:
     def __init__(self, data, file, file_des):
-	self.bucket_name = 'appsenzvids'
+	self.bucket_name = 'BUCKET NAME'
 	self.s3 = boto3.resource(
 	    's3',
-    	    aws_access_key_id='AKIAI2BUEGUCPU34QHZQ',
-    	    aws_secret_access_key='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',
+    	    aws_access_key_id='ACCESS KEY ID',
+    	    aws_secret_access_key='ACCESS KEY',
             config=Config(signature_version='s3v4')
     	)
 	self.file = file
